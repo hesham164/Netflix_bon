@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix</title>
+    <link rel="shortcut icon" href="img/Logo-site.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+
+<!--HEADER SECTION CONTAINING: LOGO/HOME/TV SHOWS/MOVIES/(MY LIST - PC ONLY) LINKS REDIRECTING TO THE MAIN PAGE-->
+
+<header class="cabecario">
+    <ul class="cabecario__lista">
+        <li><img src="img/Nlogo.png" alt="Netflix logo" class="nlogo"><img src="img/Netflix_logo.png" alt="Netflix logo" class="cabecario__item container__logo sumir__mobile"></li>
+        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Home</a></li>
+        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">TV Shows</a></li>
+        <li class="cabecario__item"><a href="principal.html" class="cabecario__link">Movies</a></li>
+        <li class="cabecario__item mobile__sumir"><a href="principal.html" class="cabecario__link">My List</a></li>
+    </ul>
+</header>
+
+<!--FEATURED MOVIE SECTION WITH A BACKGROUND IMAGE OF THE FILM (ON MOBILE, ANOTHER BACKGROUND), ALONG WITH A BUTTON TO WATCH AND ANOTHER FOR (MORE INFORMATION - NOT WORKING YET, WILL WORK IN THE FUTURE)-->
+
+<section class="container__background">
+    <img src="img/Titulo.png" alt="Title" class="container__titulo">
+    <p class="container__texto__mobile">The critically acclaimed romantic film <br> with record-breaking box office sales<br> considered one of the best romance films.</p>
+    <p class="container__texto mobile__sumir">Follow the story of two high school teenagers <br>and all their moments together in this film. This movie <br> features Bonbon Beh and Maurine  .</p>
+    <div class="container__botao">
+        <a href="filme5.html" class="botao__assistir"><img src="img/Play.png" class="play">Watch</a> 
+        <button class="botao__assistir info"><img src="img/info.png" class="play"><p class="mais__info">More Information</p></button>    
+    </div>
+</section>
+
+
+
+<!--SECTION CONTAINING MOVIES TO WATCH AGAIN (MOVIES ARE MANUALLY PLACED)-->
+
+<section class="container">
+    <p class="container__texto">Watch Again</p>
+    <ul class="container__lista">
+        
+        <li class="container__video">
+            <a href="filme1.html">
+                <img src="img/video1.png" alt="Video" class="cropped">
+                <div class="desc">Valentine's Day</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme2.html">
+                <img src="img/video2.png" alt="Video" class="cropped">
+                <div class="desc">Never Been Kissed</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme3.html">
+                <img src="img/video3.png" alt="Video" class="cropped">
+                <div class="desc">The Prince and the Frog</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme4.html">
+                <img src="img/video4.png" alt="Video" class="cropped">
+                <div class="desc">Ice Cream in Glim</div>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<!--SECTION CONTAINING MOVIES FROM MY LIST (MOVIES ARE MANUALLY PLACED)-->
+
+<section class="container">
+    <p class="container__texto">My List</p>
+    <ul class="container__lista">
+
+        <li class="container__video">
+            <a href="filme5.html">
+                <img src="img/video5.png" alt="Video" class="cropped">
+                <div class="desc">The First Love</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme4.html">
+                <img src="img/video4.png" alt="Video" class="cropped">
+                <div class="desc">Fight Club</div>
+            </a>
+        </li>
+
+        <li class="container__video">
+            <a href="filme2.html">
+                <img src="img/video2.png" alt="Video" class="cropped">
+                <div class="desc">American Psycho</div>
+            </a>
+        </li>
+
+    </ul>
+</section>
+
+<!--SECTION CONTAINING ALL MOVIES (MOVIES ARE MANUALLY PLACED)-->
+
+<section class="container">
+    <p class="container__texto">All Movies</p>
+
+    <div id="carrosel">
+    <button type="button" id="btnleft"><img src="img/Carrosel-setae.png" alt="arrow" class="botao__seta"></button>
+    <button type="button" id="btnright"><img src="img/Carrosel-setad.png" alt="arrow" class="botao__seta"></button>
+
+    <div class="container__lista" id="container">
+
+        <div class="container__video carrossel_item">
+            <a href="filme1.html">
+                <img src="img/video1.png" alt="Video" class="cropped">
+                <div class="desc">The Fresh Prince of Bel-Air</div>
+            </a>
+        </div>
+
+        <div class="container__video carrossel_item">
+            <a href="filme2.html">
+                <img src="img/video2.png" alt="Video" class="cropped">
+                <div class="desc">American Psycho</div>
+            </a>
+        </div>
+
+        <div class="container__video carrossel_item">
+            <a href="filme3.html">
+                <img src="img/video3.png" alt="Video" class="cropped">
+                <div class="desc">The Princess and the Frog</div>
+            </a>
+        </div>
+
+        <div class="container__video carrossel_item">
+            <a href="filme4.html">
+                <img src="img/video4.png" alt="Video" class="cropped">
+                <div class="desc">Fight Club</div>
+            </a>
+        </div>
+
+        <div class="container__video carrossel_item">
+            <a href="filme5.html">
+                <img src="img/video5.png" alt="Video" class="cropped">
+                <div class="desc">The First Love</div>
+            </a>
+        </div>
+
+        <div class="container__video carrossel_item">
+            <a href="filme4.html">
+                <img src="img/video4.png" alt="Video" class="cropped">
+                <div class="desc">Fight Club</div>
+            </a>
+        </div>
+    
+        <div id="limitador">limitador</div>
+    </div>
+    </div>
+
+</section>
+
+<!--PAGE FOOTER-->
+
+<footer class="rodape">
+    <h2 class="rodape__texto">More things coming soon (or not)</h2> 
+</footer>
+</body>
+</html>
